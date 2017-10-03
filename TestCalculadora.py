@@ -11,6 +11,10 @@ class CalculadoraTest(unittest.TestCase):
 		self.operaciones.suma(2, 2)
 		self.assertEquals(self.operaciones.obtener_resultado(),4)
 
+	def test_sumar_1_mas_12_igual_13(self):
+		self.operaciones.suma(1, 12)
+		self.assertEquals(self.operaciones.obtener_resultado(),13)
+
 	def test_sumar_3_mas_3_igual_6(self):
 		self.operaciones.suma(3, 3)
 		self.assertEquals(self.operaciones.obtener_resultado(),6)
